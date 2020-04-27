@@ -92,6 +92,18 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 40px;
 }
 
+#header .grup-drop{
+  font-size: 16px;
+  padding-left: 5px; 
+  color: #1da92f;
+}
+
+#header .bx{
+  font-size: 20px;
+  margin-right: 5px; 
+  color: #1da92f;
+}
+
 @media (max-width: 992px) {
   #header {
     background: rgba(255, 255, 255, 0.95);
@@ -539,6 +551,25 @@ section {
   margin-bottom: 0;
 }
 
+.details .link {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #00aa13;
+  text-decoration: none;
+  font-family: MaisonNeue-Demi,sans-serif;
+  width: auto;
+  display: inline-block;
+  padding: 5px;
+}
+
+.details .link:hover {
+  background: #1da92f;
+  color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 
 /*--------------------------------------------------------------
 # Slide & Gallery
@@ -639,6 +670,24 @@ section {
     border-radius: 25px;
   }
 }
+
+.btn-car {
+  font-size: 25px;
+  background-color: #fff;
+  color:#18d26e;
+  padding: 0 5px 0 5px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);;
+}
+
+/* .btn-car:hover {
+  font-size: 25px;
+  background-color: #fff;
+  color: #00aa13;
+  padding: 0 5px 0 5px;
+  border-radius: 50%;
+  box-shadow: #111;
+} */
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -1077,6 +1126,60 @@ section {
     transform: rotate(360deg);
   }
 }
+/* Help */
+
+#help .footer-newsletter {
+  padding: 50px 0;
+  background: #fff;
+  text-align: center;
+  font-size: 15px;
+}
+
+#help .footer-newsletter h4 {
+  font-size: 44px;
+  margin: 0 0 20px 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  color: #476e49;
+}
+
+#help .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+#help .footer-newsletter form input[type="email"] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#help .footer-newsletter form button[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #1da92f;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 50px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#help .footer-newsletter form input[type="submit"]:hover {
+  background: #415f9d;
+}
+
 
 /*--------------------------------------------------------------
 # Footer
@@ -1142,13 +1245,13 @@ section {
 }
 
 #footer .footer-top {
-  padding: 60px 0 30px 0;
-  background: #fff;
+  padding: 60px 0 0px 0;
+  /* background: #fff; */
 }
 
-#footer .footer-top .footer-contact {
+/* #footer .footer-top .footer-contact {
   margin-bottom: 30px;
-}
+} */
 
 #footer .footer-top .footer-contact h4 {
   font-size: 22px;
@@ -1235,10 +1338,33 @@ section {
   text-decoration: none;
 }
 
+#footer .footer-top .download a {
+  font-size: 13px;
+  display: inline-block;
+  background: #1da92f;
+  color: #fff;
+  line-height: 1;
+  padding: 10px;
+  /* padding-top: 4px; */
+  /* margin-right: 4px; */
+  margin-left: 4px;
+  border-radius: 5%;
+  text-align: center;
+  width: 110px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .download a:hover {
+  background: #27282c;
+  color: #fff;
+  text-decoration: none;
+}
+
 #footer .copyright {
   text-align: center;
-  float: left;
   color: #476e49;
+  float: none;
 }
 
 #footer .credits {
@@ -1254,4 +1380,16 @@ section {
     text-align: center;
     padding: 5px 0;
   }
+}
+
+.megamenu-li {
+  position: static;
+}
+
+.megamenu {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 15px;
 }
